@@ -1,0 +1,11 @@
+.form_button {
+  background-color: var(--Dark-Slate-Grey);
+  border: none;
+  border-radius: 0.3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+  height: 2.5rem;
+  cursor: pointer;
+  width: 90%;
+}

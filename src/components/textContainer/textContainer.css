@@ -1,0 +1,36 @@
+.text_container {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 0rem 1rem 1rem;
+  gap: 1rem;
+}
+
+.text_title {
+  color: var(--Dark-Slate-Grey);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+}
+
+.title_paragraph {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--Dark-Slate-Grey);
+}
+.text_paragrapgh {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--Dark-Slate-Grey);
+}
+
+.list_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
