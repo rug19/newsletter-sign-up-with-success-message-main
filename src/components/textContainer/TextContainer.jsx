@@ -11,15 +11,24 @@ export default function TextContainer() {
       </p>
       <ul className="text_paragrapgh">
         <li className="list_container">
-          <img src="/src/assets/images/icon-list.svg" alt="" />
+          <img
+            src={`${import.meta.env.VITE_PUBLIC_URL}icon-list.svg`}
+            alt="Icon List"
+          />{" "}
           <p>Product discovery and building what matters</p>
         </li>
         <li className="list_container">
-          <img src="/src/assets/images/icon-list.svg" alt="" />
+          <img
+            src={`${import.meta.env.VITE_PUBLIC_URL}icon-list.svg`}
+            alt="Icon List"
+          />
           <p>Measuring to ensure updates are a success</p>
         </li>
         <li className="list_container">
-          <img src="/src/assets/images/icon-list.svg" alt="" />
+          <img
+            src={`${import.meta.env.VITE_PUBLIC_URL}icon-list.svg`}
+            alt="Icon List"
+          />
           <p>And much more!</p>
         </li>
       </ul>
