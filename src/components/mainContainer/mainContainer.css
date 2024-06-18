@@ -1,12 +1,23 @@
 .main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41rem;
+  height: 26rem;
+  background-color: white;
+  border-radius: 1rem;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media (max-width: 700px) {
+  .main_container {
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    width: 41rem;
-    height: 26rem;
-    background-color: white;
-    border-radius: 1rem;
-    gap: 1rem;
-    padding: 1rem;
-
+    padding: 0;
+  }
 }

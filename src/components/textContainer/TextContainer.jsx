@@ -14,7 +14,7 @@ export default function TextContainer() {
           <img
             src={`${import.meta.env.VITE_PUBLIC_URL}icon-list.svg`}
             alt="Icon List"
-          />{" "}
+          />
           <p>Product discovery and building what matters</p>
         </li>
         <li className="list_container">
