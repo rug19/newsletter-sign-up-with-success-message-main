@@ -38,6 +38,7 @@
 @media (max-width: 700px) {
   .text_container {
     padding: 0rem 0rem 1rem 1.5rem;
+   
   }
   .text_title {
     font-size: 44px;
@@ -50,5 +51,12 @@
   .text_paragrapgh {
     font-size: 17px;
     gap: 1rem;
+  }
+
+  .list_container {
+    display: flex;
+    align-items: flex-start;
+    
+   
   }
 }

@@ -20,6 +20,7 @@ input {
 @media (max-width: 700px) {
   .input_paragraph {
     font-size: 12px;
+    margin-top: 1rem;
   }
   input {
     height: 3rem;
