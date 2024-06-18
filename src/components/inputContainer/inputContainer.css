@@ -26,4 +26,9 @@ input {
     height: 3rem;
     border-radius: 0.5rem;
   }
+
+  input {
+    touch-action: manipulation;
+  }
+  
 }
