@@ -6,9 +6,9 @@ export default function MainContainer() {
   return (
     <main className="main_container">
       <TextContainer></TextContainer>
-      <ImgContainer></ImgContainer>
+      <div className="img_container-main">
+        <ImgContainer></ImgContainer>
+      </div>
     </main>
   );
 }
-
-
