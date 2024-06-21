@@ -1,6 +1,5 @@
 import "./textContainer.css";
-import InputContainer from "../inputContainer/InputContainer";
-import ButtonContainer from "../buttonContainer/ButtonContainer";
+import FormContainer from "../formContainer/FormContainer";
 
 export default function TextContainer() {
   return (
@@ -33,10 +32,7 @@ export default function TextContainer() {
         </li>
       </ul>
       <div>
-        <InputContainer></InputContainer>
-      </div>
-      <div>
-        <ButtonContainer></ButtonContainer>
+        <FormContainer />
       </div>
     </section>
   );
