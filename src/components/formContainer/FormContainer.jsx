@@ -1,32 +1,39 @@
 import { useState } from "react";
 import "./formContainer.css";
 import ButtonContainer from "../buttonContainer/ButtonContainer";
+import PropTypes from "prop-types";
 
-export default function FormContainer() {
-
-  //TODO: Validar o email se passar pelo expressao regular regex
-  //TODO: Mensagem de erro caso não passe
+export default function FormContainer({ onSubmit }) {
   const [email, setEmail] = useState();
-  // const [error, setError] = useState();
-  // const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const [emailError, setEmailError] = useState(false);
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  //Lidando com o evento do submit para nao enviar o forumlario imediato
+  //Validando o email e prevenindo o comportamento padrao do submit
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email)
 
-  // const emailValidate = (e) = {
-    
-    
-  // }
-
-
-
-  }
+    if (email === "" || !emailRegex.test(email)) {
+      setEmailError(true);
+    } else {
+      setEmailError(false);
+      onSubmit();
+    }
+  };
 
   return (
     <section>
-      <p className="input_paragraph">Email address</p>
+      <div className="paragraph_container">
+        <p className="input_paragraph">Email address</p>
+        {emailError && (
+          <p
+            id="error-message"
+            className="error-message"
+            style={{ display: "block" }}
+          >
+            Valid email required
+          </p>
+        )}
+      </div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="email"></label>
         <input
@@ -35,9 +42,14 @@ export default function FormContainer() {
           name="email"
           placeholder="email@company.com"
           onChange={(e) => setEmail(e.target.value)}
+          className={emailError ? " error" : ""}
         />
+        <ButtonContainer FormContainer={handleSubmit} />
       </form>
-      <ButtonContainer validandoEmail={handleSubmit} />
     </section>
   );
 }
+
+FormContainer.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};

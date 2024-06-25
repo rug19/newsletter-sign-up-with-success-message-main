@@ -1,6 +1,4 @@
 import "./textContainer.css";
-import FormContainer from "../formContainer/FormContainer";
-
 export default function TextContainer() {
   return (
     <section className="text_container">
@@ -31,9 +29,6 @@ export default function TextContainer() {
           <p>And much more!</p>
         </li>
       </ul>
-      <div>
-        <FormContainer />
-      </div>
     </section>
   );
 }

@@ -1,17 +1,17 @@
+
 import './buttonContainer.css';
 import PropTypes from 'prop-types';
 
-export default function ButtonContainer({handleSubmit}) {
+export default function ButtonContainer({FormContainer}) {
   return (
     <section>
-      <button onClick={handleSubmit} className='form_button' id="submit-btn">Subscribe to monthly newsletter</button>
+      <button type='submit' onClick={FormContainer} className='form_button' id="submit-btn">Subscribe to monthly newsletter</button>
     </section>
   );
 }
 
 
 //Especifica o tipo de props que esta utilizando
-
 ButtonContainer.propTypes = {
-  handleSubmit: PropTypes.func.isRequired,
+  FormContainer: PropTypes.func.isRequired,
 };
