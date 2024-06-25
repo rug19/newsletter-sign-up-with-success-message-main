@@ -1,3 +1,6 @@
+.form_container {
+  padding: 1rem;
+}
 .input_paragraph {
   font-family: "Roboto", sans-serif;
   color: var(--Dark-Slate-Grey);
@@ -32,16 +35,14 @@ input {
   background: #ffe8e6;
 }
 
-.paragraph_container{
-display: flex;
-gap: 10rem;
+.paragraph_container {
+  display: flex;
+  gap: 9rem;
 }
-
-
 
 @media (max-width: 700px) {
   .input_paragraph {
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 1rem;
   }
   input {
@@ -49,7 +50,20 @@ gap: 10rem;
     border-radius: 0.5rem;
   }
 
+  /* Para não da zoon ao clicar no input para colocar as informações */
   input {
+    width: 100%;
     touch-action: manipulation;
+  }
+
+  .error-message {
+    font-size: 11px;
+    margin-top: 1rem;
+  }
+
+  .paragraph_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
   }
 }

@@ -8,10 +8,12 @@ import SucessContainer from "../sucessContainer/SucessContainer";
 export default function MainContainer() {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
+  //Função para validar quando o email passar na validação do regex e mostrar a messagem de sucesso
   const handleEmailSubmit = () => {
     setEmailSubmitted(true);
   };
 
+  //Função para realizar um novo envio de email 
   const handleNewSubmission = () => {
     setEmailSubmitted(false);
   };

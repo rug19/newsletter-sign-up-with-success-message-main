@@ -12,6 +12,7 @@ export default function FormContainer({ onSubmit }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    //Condição para validar se o e-mail passa na verificação do regex "Expressão regular".
     if (email === "" || !emailRegex.test(email)) {
       setEmailError(true);
     } else {
@@ -21,7 +22,7 @@ export default function FormContainer({ onSubmit }) {
   };
 
   return (
-    <section>
+    <section className="form_container">
       <div className="paragraph_container">
         <p className="input_paragraph">Email address</p>
         {emailError && (
@@ -34,7 +35,7 @@ export default function FormContainer({ onSubmit }) {
           </p>
         )}
       </div>
-      <form onSubmit={handleSubmit}>
+      <div>
         <label htmlFor="email"></label>
         <input
           id="email"
@@ -45,7 +46,7 @@ export default function FormContainer({ onSubmit }) {
           className={emailError ? " error" : ""}
         />
         <ButtonContainer FormContainer={handleSubmit} />
-      </form>
+      </div>
     </section>
   );
 }
