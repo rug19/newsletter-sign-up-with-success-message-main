@@ -15,9 +15,12 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
+
+}
+body {
   background-color: var(--Dark-Slate-Grey);
   font-family: var(--Robot);
   display: flex;
@@ -28,6 +31,5 @@ body {
 @media (max-width: 600px) {
   body {
     background-color: white;
-    
   }
 }
