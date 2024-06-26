@@ -4,7 +4,7 @@
 .input_paragraph {
   font-family: "Roboto", sans-serif;
   color: var(--Dark-Slate-Grey);
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   margin-bottom: 0.4rem;
 }
@@ -65,5 +65,9 @@ input {
     display: flex;
     justify-content: space-between;
     gap: 10rem;
+  }
+
+  .form_container {
+    padding: 0rem 1rem 1rem 1rem;
   }
 }
