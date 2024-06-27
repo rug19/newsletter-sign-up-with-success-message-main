@@ -24,7 +24,9 @@ export default function FormContainer({ onSubmit }) {
   return (
     <section className="form_container">
       <div className="paragraph_container">
-        <p className="input_paragraph">Email address</p>
+        <label className="input_paragraph" htmlFor="email">
+          Email Adress
+        </label>
         {emailError && (
           <p
             id="error-message"
@@ -36,7 +38,6 @@ export default function FormContainer({ onSubmit }) {
         )}
       </div>
       <div>
-        <label htmlFor="email"></label>
         <input
           id="email"
           type="email"
