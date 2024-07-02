@@ -1,7 +1,5 @@
-# Frontend Mentor - Newsletter sign-up form with success message solution
-
-This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+# Newsletter sign-up form with success message solution 
+I started to learn JavaScript recently. I've created a project to master JavaScript-based email validation techniques. It was a challenge, but I decided to include React.js. I want to learn about components and how the JSX file works.
 ## Table of contents
 
 - [Overview](#overview)
@@ -15,8 +13,6 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
