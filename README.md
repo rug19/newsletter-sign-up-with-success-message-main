@@ -130,5 +130,5 @@ For a React project like this one, your `package.json` might look like this:
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@rug19]([https://www.frontendmentor.io/profile/yourusername](https://www.frontendmentor.io/profile/rug19))
+- Frontend Mentor - [@rug19](https://www.frontendmentor.io/profile/rug19)
 
