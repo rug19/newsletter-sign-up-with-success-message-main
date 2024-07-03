@@ -50,33 +50,79 @@ Mobile version
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This is the first project I did in React, so it was a little complicated for me to understand some concepts. So, I had to research a lot of things; one of those I found was about GitHub Pages. This platform lets you host static websites from your repository right away. You can use JavaScript libraries or frameworks. These include React, Angular, jQuery, and d3.js. You can also use CSS libraries such as Bootstrap, Tailwind, Bulma, and so on. Be careful, this platform is for static sites; he's not able to handle the back end.
 
-To see how you can add code snippets, see below:
+#### Step 1: Install the gh-pages Package
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+- In the terminal, navigate to your project's direcotry.
+- Run the following command to install `gh-pages` as development dependency:
+  
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+npm install gh-pages --save-dev
+```
+
+#### Step 2: Configure the Deployment Script
+- Open your project's `package.json` file.
+- Add a deploy script that uses the `gh-pages` command to publish the `dist` folder.
+
+```
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+#### Step 4: Set Up the Repository
+
+- Create a new repository on Github if you haven`t already.
+- Initialize a local Git repository and connect it to your GitHub repository:
+  
+```
+git init
+git remote add origin https://github.com/<username>/<repository-name>.git
+
 }
 ```
+#### Deploy the Projetc
+
+- Run the following command in your terminal to build and publish the `dist` or `build` folder:
+
+````
+npm run deploy
+````
+
+#### Complete example 
+
+For a React project like this one, your `package.json` might look like this: 
+
+````
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
+
+````
+
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
