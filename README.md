@@ -32,18 +32,11 @@ Users should be able to:
 
 Desktop version
 
-<img src="src/design/desktop-design.jpg" width="70%">
+<img src="src/design/desktop-design.jpg" width="90%">
 
 Mobile version
 
-<img src="src/design/mobile-design.jpg" height="500px">
-
-
-
-
-
-
-
+<img src="src/design/iPhone-11-rug19.github.io.png" height="500px">
 
 ### Links
 
