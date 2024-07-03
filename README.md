@@ -9,10 +9,7 @@ I started to learn JavaScript recently. I've created a project to master JavaScr
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -54,7 +51,9 @@ Mobile version
 
 ### What I learned
 
-This is the first project I did in React, so it was a little complicated for me to understand some concepts. So, I had to research a lot of things; one of those I found was about GitHub Pages. This platform lets you host static websites from your repository right away. You can use JavaScript libraries or frameworks. These include React, Angular, jQuery, and d3.js. You can also use CSS libraries such as Bootstrap, Tailwind, Bulma, and so on. Be careful, this platform is for static sites; he's not able to handle the back end.
+This is the first project I did in React, it's been a challenge, but I'm very excited to learn this new technology. React excels in front-end projects due to its optimal usability. I discovered that you can easily reuse components in many contexts. I also got to put into practice more about logic programming using JavaScript.
+
+I made a fascinating discovery about GitHub pages. This platform lets you host static websites from your repository right away. You can use JavaScript libraries or frameworks. These include React, Angular, jQuery, and d3.js. You can also use CSS libraries such as Bootstrap, Tailwind, Bulma, and so on. But be careful because he's not able to handle the back end. The instructions are above. 
 
 #### Step 1: Install the gh-pages Package
 
@@ -123,34 +122,13 @@ For a React project like this one, your `package.json` might look like this:
 
 ````
 
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@rug19]([https://www.frontendmentor.io/profile/yourusername](https://www.frontendmentor.io/profile/rug19))
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
