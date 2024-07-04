@@ -122,13 +122,8 @@ For a React project like this one, your `package.json` might look like this:
 
 ````
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Ruan Gomes](https://rug19.github.io/Portfolio_page/)
 - Frontend Mentor - [@rug19](https://www.frontendmentor.io/profile/rug19)
 
