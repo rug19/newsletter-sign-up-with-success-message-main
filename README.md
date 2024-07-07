@@ -64,16 +64,24 @@ I made a fascinating discovery about GitHub pages. This platform lets you host s
 npm install gh-pages --save-dev
 ```
 
-#### Step 2: Configure the Deployment Script
+#### Step 2: Configure the Deployment Script and config Vite
 - Open your project's `package.json` file.
-- Add a deploy script that uses the `gh-pages` command to publish the `dist` folder.
+- Add a deploy script that uses the `gh-pages` command to publish the `dist` folder and also change the build name for dist.
+- add a homepage above the name with the following descriptions (https://<username>.github.io/<repository_name>.
 
 ```
+"homepage": "https://rug19.github.io/time_tracnking_dashboard"
 "scripts": {
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build"
 }
 ```
+
+
+- Add the following config in the vite config
+````
+base: "/<repository_name"
+````
 #### Step 4: Set Up the Repository
 
 - Create a new repository on Github if you haven`t already.
